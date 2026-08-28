@@ -68,11 +68,12 @@ const Contact: React.FC = () => {
   ];
 
   return (
-    <section id="contact" className="section-padding bg-gray-50">
+    <section id="contact" className="section-padding bg-slate-50">
       <div className="container-max">
         <div className="text-center mb-16">
+          <p className="section-kicker">Let's connect</p>
           <h2 className="heading-primary">Get In Touch</h2>
-          <div className="w-24 h-1 bg-primary-600 mx-auto mb-8"></div>
+          <div className="section-rule mb-8"></div>
           <p className="text-body text-lg max-w-3xl mx-auto">
             I'm always interested in hearing about new opportunities, interesting projects, 
             or just want to say hello. Feel free to reach out!

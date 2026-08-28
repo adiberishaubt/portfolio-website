@@ -59,11 +59,12 @@ const Skills: React.FC = () => {
   };
 
   return (
-    <section id="skills" className="section-padding bg-gray-50">
+    <section id="skills" className="section-padding bg-slate-50">
       <div className="container-max">
         <div className="text-center mb-16">
+          <p className="section-kicker">Tools I use</p>
           <h2 className="heading-primary">Skills & Languages</h2>
-          <div className="w-24 h-1 bg-primary-600 mx-auto"></div>
+          <div className="section-rule"></div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">

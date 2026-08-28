@@ -14,15 +14,15 @@ const Header: React.FC = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
+    <header className="fixed top-0 left-0 right-0 z-50 border-b border-slate-200/80 bg-white/85 shadow-sm shadow-slate-950/5 backdrop-blur-xl">
       <div className="container-max">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center">
+            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-primary-600 to-cyan-500 shadow-md shadow-primary-600/20">
               <span className="text-white font-bold text-lg">A</span>
             </div>
-            <span className="text-xl font-bold text-gray-900">Adi Berisha</span>
+            <span className="text-xl font-bold tracking-tight text-slate-950">Adi Berisha</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -31,7 +31,7 @@ const Header: React.FC = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-gray-600 hover:text-primary-600 transition-colors duration-200 font-medium"
+                className="font-medium text-slate-600 transition-colors duration-200 hover:text-primary-600"
               >
                 {item.name}
               </a>

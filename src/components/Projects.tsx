@@ -11,8 +11,9 @@ const Projects: React.FC = () => {
     <section id="projects" className="section-padding bg-white">
       <div className="container-max">
         <div className="text-center mb-16">
+          <p className="section-kicker">Selected work</p>
           <h2 className="heading-primary">Featured Projects</h2>
-          <div className="w-24 h-1 bg-primary-600 mx-auto mb-8"></div>
+          <div className="section-rule mb-8"></div>
           <p className="text-body text-lg max-w-3xl mx-auto">
             Here are some of my recent projects that showcase my skills in web development, 
             backend development, and full-stack applications.
@@ -27,8 +28,8 @@ const Projects: React.FC = () => {
               onClick={() => setSelectedCategory(category)}
               className={`px-4 py-2 rounded-lg font-medium transition-colors duration-200 ${
                 selectedCategory === category
-                  ? 'bg-primary-600 text-white'
-                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                  ? 'bg-primary-600 text-white shadow-lg shadow-primary-600/20'
+                  : 'border border-slate-200 bg-white text-slate-700 hover:border-primary-200 hover:bg-primary-50'
               }`}
             >
               {category}
