@@ -14,18 +14,19 @@ const About: React.FC = () => {
     <section id="about" className="section-padding bg-white">
       <div className="container-max">
         <div className="text-center mb-16">
+          <p className="section-kicker">A little more about me</p>
           <h2 className="heading-primary">About Me</h2>
-          <div className="w-24 h-1 bg-primary-600 mx-auto"></div>
+          <div className="section-rule"></div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Left Column - Personal Information */}
           <div className="space-y-6">
             <h3 className="heading-secondary">Personal Information</h3>
-            <div className="space-y-4">
+            <div className="space-y-3">
               {personalInfo.map((info, index) => (
-                <div key={index} className="flex items-center space-x-4">
-                  <div className="w-3 h-3 bg-primary-400 rounded-full"></div>
+                <div key={index} className="flex items-center space-x-4 rounded-xl border border-slate-100 bg-slate-50/70 p-4 transition hover:border-primary-100 hover:bg-primary-50/50">
+                  <div className="h-2.5 w-2.5 rounded-full bg-primary-500"></div>
                   <div className="flex-1">
                     <span className="font-semibold text-gray-800">{info.label}:</span>
                     {info.label === 'Email' ? (
@@ -58,16 +59,10 @@ const About: React.FC = () => {
             <h3 className="heading-secondary">My Story</h3>
             <div className="space-y-4 text-body">
               <p>
-                I am a passionate Computer Science and Engineering student at UBT College, driven by a 
-                continuous desire to learn and grow in the field of technology. My journey began at a 
-                natural sciences elite gymnasium in Prishtina, where I developed a strong foundation 
-                in analytical thinking and problem-solving.
+                I am a Computer Science and Engineering student at UBT College, currently four exams away from completing my degree. I am driven by continuous learning and a desire to turn solid technical foundations into useful, well-crafted digital experiences.
               </p>
               <p>
-                Through dedicated study and hands-on practice, I've acquired solid programming skills 
-                including HTML, CSS, and JavaScript fundamentals, as well as Java fundamentals. I've 
-                expanded my expertise to include modern frameworks like React and .NET, along with 
-                experience in PHP and WordPress development.
+                Alongside my studies, I have built practical experience in quality assurance, IT operations, data quality, and team supervision. I also work with modern web technologies including React, Next.js, TypeScript, Java, PHP, and SQL.
               </p>
               <p>
                 My ultimate goal is to become a proficient developer with a broad range of skills, 

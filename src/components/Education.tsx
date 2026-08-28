@@ -6,16 +6,17 @@ const Education: React.FC = () => {
       institution: 'Kolegji UBT - Higher Education Institute',
       degree: 'Student of Computer Science and Engineering',
       location: 'Prishtina, Kosovo',
-      period: '18/10/2022 - CURRENT',
-      grade: '8.8/10 (still on-going)',
+      period: '18/10/2022 - Present',
+      grade: '8.18/10',
       website: 'ubt-uni.net',
-      field: 'Computer Science and Engineering'
+      field: 'Computer Science and Engineering',
+      note: 'Currently completing my final coursework - 4 exams remaining until graduation.'
     },
     {
       institution: 'Shkolla Digjitale - Digital School',
       degree: 'React Native Developer',
       location: 'Prishtina, Kosovo',
-      period: '11/2023 - 01/2004',
+      period: '11/2023 - 01/2024',
       grade: 'Completed',
       website: 'shkolladigjitale.com',
       field: 'Mobile Development'
@@ -80,21 +81,25 @@ const Education: React.FC = () => {
     <section id="education" className="section-padding bg-white">
       <div className="container-max">
         <div className="text-center mb-16">
+          <p className="section-kicker">Learning journey</p>
           <h2 className="heading-primary">Education & Training</h2>
-          <div className="w-24 h-1 bg-primary-600 mx-auto"></div>
+          <div className="section-rule"></div>
         </div>
 
         <div className="space-y-8">
           {education.map((edu, index) => (
-            <div key={index} className="card">
+            <div key={index} className={`card ${index === 0 ? 'border-primary-200 bg-gradient-to-br from-primary-50 via-white to-cyan-50/60' : ''}`}>
               <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
                 <div className="flex-1">
                   <div className="flex items-start gap-4">
-                    <div className="w-3 h-3 bg-accent-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <div className={`mt-2 flex h-3 w-3 flex-shrink-0 rounded-full ${index === 0 ? 'bg-primary-600 ring-4 ring-primary-100' : 'bg-accent-400'}`}></div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-semibold text-gray-900 mb-1">
+                      <div className="mb-2 flex flex-wrap items-center gap-3">
+                        <h3 className="text-xl font-semibold text-slate-900">
                         {edu.degree}
-                      </h3>
+                        </h3>
+                        {index === 0 && <span className="tag">In progress</span>}
+                      </div>
                       <div className="flex flex-wrap items-center gap-2 mb-3">
                         <span className="text-accent-600 font-medium">{edu.institution}</span>
                         <span className="text-gray-400">•</span>
@@ -104,10 +109,16 @@ const Education: React.FC = () => {
                       <p className="text-sm text-gray-600 mb-3">
                         <span className="font-medium">Field:</span> {edu.field}
                       </p>
+
+                      {'note' in edu && edu.note && (
+                        <p className="mb-4 max-w-2xl rounded-xl border border-primary-100 bg-white/80 px-4 py-3 text-sm font-medium leading-relaxed text-primary-800">
+                          {edu.note}
+                        </p>
+                      )}
                       
                       <div className="flex flex-wrap items-center gap-4">
                         <div className="flex items-center gap-2">
-                          <span className="text-sm font-medium text-gray-700">Grade:</span>
+                          <span className="text-sm font-medium text-gray-700">Final grade:</span>
                           <span className="px-3 py-1 bg-accent-100 text-accent-700 text-sm rounded-full font-medium">
                             {edu.grade}
                           </span>

@@ -3,6 +3,46 @@ import React from 'react';
 const Experience: React.FC = () => {
   const experiences = [
     {
+      company: 'Sogody & Cheil',
+      position: 'QA Engineer - Project Based',
+      location: 'Prishtina, Kosovo',
+      period: '20/07/2026 – 14/08/2026',
+      description: [
+        'Featured new Samsung model launches and features across European markets, reviewing more than 1,000 QA links',
+        'Performed manual testing using BrowserStack and supported automated testing workflows',
+        'Contributed to A/B testing and quality assurance for launch content'
+      ],
+      technologies: ['Quality Assurance', 'BrowserStack', 'Manual Testing', 'A/B Testing']
+    },
+    {
+      company: 'Central Election Commission',
+      position: 'Administrative Staff',
+      location: 'Prishtina, Kosovo',
+      period: '21/05/2026 – 01/07/2026',
+      description: [
+        'Received sensitive electoral material, non-electoral administrative material and information technology after the completion of the count at the NCC',
+        'Counted conditional, diaspora and VPNV ballots',
+        'Recounted ballots based on the recommendation of the CEC, ECAP decisions and other decisions of judicial bodies',
+        'Prepared and verified materials for scanning',
+        'Used equipment (scanner and software) for scanning voter lists',
+        'Ensured the quality of scanning and data storage'
+      ],
+      technologies: ['Data Management', 'Quality Assurance', 'Electoral Operations']
+    },
+    {
+      company: 'UNICEF & Kosovo Agency of Statistics',
+      position: 'Supervisor of Enumerators - MICS',
+      location: 'Prishtina, Kosovo',
+      period: '04/08/2025 – 08/11/2025',
+      description: [
+        'Coordinated, led and monitored the team\'s work in the field',
+        'Supervised the correct implementation of the questionnaires',
+        'Ensured the quality of the data collected',
+        'Maintained daily communication and synchronization with UNICEF & KAS administrative staff'
+      ],
+      technologies: ['Team Leadership', 'Field Supervision', 'Data Quality']
+    },
+    {
       company: 'IPKO Telecommunications',
       position: 'Back Office Intern',
       location: 'Prishtina, Kosovo',
@@ -66,11 +106,12 @@ const Experience: React.FC = () => {
   ];
 
   return (
-    <section id="experience" className="section-padding bg-gray-50">
+    <section id="experience" className="section-padding bg-slate-50">
       <div className="container-max">
         <div className="text-center mb-16">
+          <p className="section-kicker">Where I've contributed</p>
           <h2 className="heading-primary">Work Experience</h2>
-          <div className="w-24 h-1 bg-primary-600 mx-auto"></div>
+          <div className="section-rule"></div>
         </div>
 
         <div className="space-y-8">
