@@ -7,10 +7,10 @@ const Education: React.FC = () => {
       degree: 'Student of Computer Science and Engineering',
       location: 'Prishtina, Kosovo',
       period: '18/10/2022 - Present',
-      grade: '8.18/10',
+      grade: '8.00/10',
       website: 'ubt-uni.net',
       field: 'Computer Science and Engineering',
-      note: 'Currently completing my final coursework - 4 exams remaining until graduation.'
+      note: 'Currently completing my final coursework - 2 exams remaining until graduation.'
     },
     {
       institution: 'Shkolla Digjitale - Digital School',

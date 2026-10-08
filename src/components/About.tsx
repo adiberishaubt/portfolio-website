@@ -59,7 +59,7 @@ const About: React.FC = () => {
             <h3 className="heading-secondary">My Story</h3>
             <div className="space-y-4 text-body">
               <p>
-                I am a Computer Science and Engineering student at UBT College, currently four exams away from completing my degree. I am driven by continuous learning and a desire to turn solid technical foundations into useful, well-crafted digital experiences.
+                I am a Computer Science and Engineering student at UBT College, currently two exams away from completing my degree. I am driven by continuous learning and a desire to turn solid technical foundations into useful, well-crafted digital experiences.
               </p>
               <p>
                 Alongside my studies, I have built practical experience in quality assurance, IT operations, data quality, and team supervision. I also work with modern web technologies including React, Next.js, TypeScript, Java, PHP, and SQL.
