@@ -35,11 +35,11 @@ const Hero: React.FC = () => {
 
             <div className="grid max-w-2xl grid-cols-3 gap-3 pt-3 sm:gap-5">
               <div className="rounded-2xl border border-white/10 bg-white/5 p-4 text-center backdrop-blur-sm">
-                <div className="text-2xl font-bold text-white sm:text-3xl">8.18/10</div>
+                <div className="text-2xl font-bold text-white sm:text-3xl">8.00/10</div>
                 <div className="mt-1 text-xs font-medium uppercase tracking-wide text-slate-400 sm:text-sm">Current GPA</div>
               </div>
               <div className="rounded-2xl border border-white/10 bg-white/5 p-4 text-center backdrop-blur-sm">
-                <div className="text-2xl font-bold text-white sm:text-3xl">4</div>
+                <div className="text-2xl font-bold text-white sm:text-3xl">2</div>
                 <div className="mt-1 text-xs font-medium uppercase tracking-wide text-slate-400 sm:text-sm">Exams to graduate</div>
               </div>
               <div className="rounded-2xl border border-white/10 bg-white/5 p-4 text-center backdrop-blur-sm">
